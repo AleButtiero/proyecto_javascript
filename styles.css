@@ -1,0 +1,96 @@
+/* NORMALIZE */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #dfd3d3;
+    font-family: 'Manrope', sans-serif;
+    color:rgb(14, 1, 1);
+    max-width: 1200px;
+    margin: auto;
+}
+img{
+    width: 100%;
+}
+ul, ol{
+    list-style-type: none;
+}
+a{
+    font-size: 15px;
+    text-decoration:none;
+    color:white;
+}
+a:hover{
+    color:inherit;
+}
+
+
+/*HEADER */
+header {
+    text-align: center;
+    margin: 1em;
+}
+h1 {
+    color: rgb(15, 16, 19);
+    font-weight: 700;
+    font-size: 50px;
+}
+
+
+
+#contenedor-discos {
+    max-width: 1200px;
+    margin: 90px auto;
+    display: flex;
+    justify-content:space-around;
+}
+
+
+p {
+    line-height: 1.6;
+}
+.producto {
+    max-width: 30%;
+    padding: 10px;
+    margin: 3px;
+}
+.precioProducto {
+    font-weight: 700;
+}
+.boton-agregar {
+    padding: 0.5em;
+    margin: 1em 0;
+    font-weight: bold;
+    background-color: rgb(163, 223, 166);
+    cursor: pointer;
+}
+
+
+
+
+.productoEnCarrito {
+
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.titulo__volver{
+font-size: 1em;
+display: flex;
+justify-content: center;
+margin-top: 2em;
+
+}
+
+.info__artist{
+    text-align: center;
+    font-size: 2em;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>artistas biografías</title>
+
+</head>
+<body>
+
+    <h2> <a class="titulo__volver" href="./index.html"> Volver al catálogo</a></h2>
+
+<ul id="lista">
+<li></li>
+</ul>
+
+
+    <script src ="artist.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <body>
+    <h1> Buscador de artistas</h1>
+    <form id="busqueda-artista">
+        <input type ="text" name ="artist" placeholder="Nombre del Artista" required>
+        <br>
+        <input type="submit">
+    </form>
+    <aside class="error"></aside>
+    <main>
+        <article class="artist">
+            <h2>Info del artista</h2>
+        </article>
+
+        <ul id ="lista"></ul>
+    </main>
+    <script src="artist.js"></script> 
+</body> -->
+
+    <!-- <body>
+        <h1>Buscador de Canciones</h1>
+        <form id="song-search">
+          <input type="text" name="artist" placeholder="Nombre del Intérprete" required>
+          <br>
+          <input type="text" name="song" placeholder="Nombre de la Canción" required>
+          <br>
+          <input type="submit">
+        </form>
+        <img class="loader" src="../assets/loader.svg" alt="Cargando...">
+        <aside class="error"></aside>
+        <main>
+          <article class="artist"></article>
+          <article class="song"></article>
+        </main>
+
+
+
+        <script> 
+         const d = document,
+            $form = d.getElementById("song-search"),
+            $error = d.querySelector(".error"),
+            $main = d.querySelector("main"),
+            $artist = d.querySelector(".artist"),
+            $song = d.querySelector(".song");
+
+        $form.addEventListener("submit", async e=> {
+        e.preventDefault();
+
+       try {
+
+            let artist = e.target.artist.value.toLowerCase();
+                song = e.target.song.value.toLowerCase(),
+            $artistTemplate = "";
+            $songTemplate = "";
+            artistAPI = `https://theaudiodb.com/api/v1/json/2/search.php?s=${artist}`;
+            songAPI = `https://lyricsovh.docs.apiary.io/${artist}/${song}`,
+            artistFetch = fetch(artistAPI),
+            songFetch = fetch(songAPI),
+            [ArtistRes, SongRes] = await  Promise.all([ArtistFetch, SongFetch]),
+            artistData =  await artistRes.json();
+            songData =  await songRes.json();
+
+            console.log(artistRes, songRes);
+            console.log(artistData, songData);
+
+
+       } catch (err) {
+            console.log(err)
+             let message = err.statusText || "Ocurrió un error";
+             $error.innerHTML = `<p> Error ${err.status}: ${message}</p>`
+         }
+    });
+        
+        
+        </script> -->
+
+        <!-- <script src="artist.js"></script>  -->
+
+
+
+</html>

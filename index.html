@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discos Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+ 
+</head>
+<body>
+    <header>
+        <h1 id="titulo" class="titulo">Discos Online</h1>
+        <h2> <a href="/artistas.html"> Biografías de Artistas</a></h2>
+        
+    </header>
+
+
+    <main id="contenedor-discos">
+
+    </main>
+
+    <div class="resultado-carrito">
+        <div class="resultado-carrito2">
+            <h3>Carrito total</h3>
+            <div id="carrito-contenedor">
+            </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+        </div>
+        <span id="contadorCarrito"></span>
+    </div>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script defer src="stock.js"></script>
+    <script defer src="app.js"></script>
+</body>
+</html>
